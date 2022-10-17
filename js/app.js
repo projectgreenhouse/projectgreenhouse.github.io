@@ -128,11 +128,11 @@ let header = document.querySelector("header"); //Selecciono el elemento header
 let contGuia = document.querySelector(".cont_guia"); //Selecciono el div que contiene la informacion de guias
 contGuia.style.height = `${body.clientHeight - header.clientHeight}px`; //Resto la altura del body y la del header para determinar la altura del contenedor de guias
 */
-let header = document.querySelector("header")
-let main = document.querySelector(".main-guia")
-let body = document.querySelector("body")
-let cuenta = body.clientHeight - header.clientHeight;
-main.style.height = cuenta + "px";
+let header = document.querySelector("header") //Selecciono el elemento header
+let main = document.querySelector(".main-guia") //Selecciono la clase main-guia
+let body = document.querySelector("body") //Selecciono el elemento body 
+let cuenta = body.clientHeight - header.clientHeight; //Resto la altura del body y la del header para determinar la altura del main
+main.style.height = cuenta + "px"//Le paso el valor obtenido anteriormente
 
 
 
