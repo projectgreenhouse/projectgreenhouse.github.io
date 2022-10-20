@@ -78,18 +78,31 @@
         flex-direction: column;
    }
    .nosotros {
+        display: flex;
         flex-direction: column;
+   }
+   .desplazado {
+    max-height: fit-content;
+    width: 100%;
+   }
+   .alumno_fotos{
+    gap: 1rem;
    }
    .contenedor_descripcion {
     width: 90%;
    }
    .nosotros_title_descripcion {
     font-size: 2.5rem;
+    text-align: center;
    }
    /* galeria */
    .carrousel .img {
-    width: 85%;
-}
+    width: 90%;
+    }
+    .img_distinta {
+        width: 90%;
+        height: 90%;
+    }
     /*modal guia*/
     .boton_modal_guia {
         padding: 0.3rem;
@@ -101,13 +114,11 @@
     /*contacto*/
     #contacto-title {
         font-size: 3rem;
-        top: 1em;
     }
 
     .formulario {
         padding: 0;
         padding-top: 2rem;
-        top: 6em;
     }
 
     .campo-text {

@@ -11,6 +11,7 @@ html{
   }
 body{
     font-family: 'Jost', sans-serif;
+    height: 100vh;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -350,11 +351,6 @@ body::-webkit-scrollbar {
 }
 /* galeria */
 .galeria_main{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,16 +362,27 @@ body::-webkit-scrollbar {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    width: fit-content;
     height: fit-content;
-    width: 100%;
 }
 .carrousel .img{
     -webkit-box-shadow: 5px 5px 50px 27px #000000; 
     box-shadow: 5px 5px 50px 27px #000000;  
     border: none;
     border-radius: 2em;
+    /*
     width: calc(100% / 3);
-    height: 20em;
+    height: 20em;*/
+    width: 50%;
+    height: 50%;
+}
+.img_distinta {
+    -webkit-box-shadow: 5px 5px 50px 27px #000000; 
+    box-shadow: 5px 5px 50px 27px #000000;  
+    border: none;
+    border-radius: 2em;
+    width: 35%;
+    height: 35%;
 }
 .puntos{
     display:flex;
@@ -407,21 +414,44 @@ body::-webkit-scrollbar {
     font-weight: 100;
 }
 .nosotros {
-    display: flex;
-    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    gap: 2rem;
-    font-size: 1.5rem;
+    column-gap: 5rem;
+    row-gap: 2rem;
+    padding: 2rem;
 }
 .alumno {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.alumno img {
+.desplazado {
+    grid-column: -3/-1;
+    width: 50%;
+    margin: 0 auto;
+}
+.alumno_fotos{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.alumno_foto{
     width: 7rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+.alumno_linkedin{
+    width: 3rem;
+    border-radius: 0%;
+    transition: 1s ease;
+}
+.alumno_linkedin:hover{
+    width: 5rem;
+}
+.enlace_linkedin{
+    height: fit-content;
 }
 .alumno p {
     text-align: center;
