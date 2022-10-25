@@ -59,8 +59,12 @@
         font-size: 0.8em;
     }
     /* galeria */
-    .carrousel .img {
-        width: 50%;
+    .galeria_main {
+        flex-direction: column;
+        padding: 5rem;
+    }
+    .carrousel {
+        margin-bottom: 5rem;
     }
     /* contacto */
     #contacto-title {
