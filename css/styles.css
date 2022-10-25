@@ -375,20 +375,20 @@ body::-webkit-scrollbar {
     font-size: 4em;
 }
 /* galeria */
+.modelo {
+    width: fit-content;
+}
 .galeria_main{
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(../img/Background_Guias.png);
-}
+    gap: 5rem;
+}   
 
 .carrousel{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    height: fit-content;
+    width: 40rem;
+    height: 40rem;
 }
 .carrousel .img{
     -webkit-box-shadow: 5px 5px 50px 27px #000000; 
@@ -398,16 +398,16 @@ body::-webkit-scrollbar {
     /*
     width: calc(100% / 3);
     height: 20em;*/
-    width: 50%;
-    height: 50%;
+    width: inherit;
+    height: inherit;
 }
 .img_distinta {
     -webkit-box-shadow: 5px 5px 50px 27px #000000; 
     box-shadow: 5px 5px 50px 27px #000000;  
     border: none;
     border-radius: 2em;
-    width: 35%;
-    height: 35%;
+    width: inherit;
+    height: inherit;
 }
 .puntos{
     display:flex;

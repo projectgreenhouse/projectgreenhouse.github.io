@@ -70,5 +70,9 @@
     .galeria_main{
         display: flex;
         flex-direction: column;
+        padding: 10rem;
+    }
+    .carrousel {
+        margin-bottom: 10rem;
     }
 }

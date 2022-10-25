@@ -83,13 +83,18 @@
     text-align: center;
    }
    /* galeria */
+   .galeria_main {
+    flex-direction: column;
+    padding: 5rem;
+   }
+   .carrousel {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 5rem;
+   }
    .carrousel .img {
-    width: 70%;
-    }
-    .img_distinta {
-        width: 85%;
-        height: 85%;
-    }
+    width: inherit;
+   }
     /*modal guia*/
     .boton_modal_guia {
         padding: 0.3rem;
